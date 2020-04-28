@@ -38,5 +38,5 @@ console.log(longestPalindrome("babad"));
 console.log(longestPalindrome("cbbd"));
 console.log(longestPalindrome("abcda"));
 
-// Time Complexity - n // n-string length
+// Time Complexity - n^2 // n-string length
 // Space Complexity - n // n-string length
