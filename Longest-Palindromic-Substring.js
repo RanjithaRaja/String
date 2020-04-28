@@ -12,20 +12,19 @@
 // Output: "bb"
 
 var longestPalindrome = function (s) {
-  let strArray = s.split("");
+  let i, j;
   let longest = "";
   let word;
   let wordArray;
 
-  for (let i = 0; i <= strArray.length - 1; i++) {
+  for (i = 0; i <= s.length - 1; i++) {
     word = "";
-    for (let j = i; j <= strArray.length - 1; j++) {
-      word += strArray[j];
+    for (j = i; j <= s.length - 1; j++) {
+      word += s[j];
       wordArray = word.split("");
 
       if (word === wordArray.reverse().join("")) {
         longest = longest.split("").length > wordArray.length ? longest : word;
-        // console.log(longest);
       }
 
     }
