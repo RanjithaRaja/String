@@ -37,15 +37,13 @@ let longestPalindrome = function (s) {
   // For three and above char
   for (i = s.length - 2; i >= 0; i--) {
     for (j = i + 2; j <= s.length - 1; j++) {
-      console.log(i, j, s[i], s[j])
       if (s[i] === s[j] && dp[i + 1][j - 1] === 1) {
         dp[i][j] = 1;
         longest = longest.length > s.substring(i, j + 1).length ? longest : s.substring(i, j + 1)
       }
     }
   }
-
-  console.log(dp, longest);
+  // console.log(dp, longest)
 
   return longest
 }
