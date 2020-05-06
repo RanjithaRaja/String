@@ -26,7 +26,6 @@ var rotateString = function (A, B) {
     for (let i = 0; i < currentStr.length - 1; i++) {
       str[i] = currentStr[i + 1];
     }
-
     str[str.length] = currentStr[0]
 
     return str.join("");
@@ -36,7 +35,8 @@ var rotateString = function (A, B) {
     A = rotateByOnePosition(A)
 
     if (A === B) {
-      result = true
+      result = true;
+      return result
     }
   }
 
