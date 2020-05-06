@@ -27,7 +27,7 @@ var rotateString = function (A, B) {
       str[i] = currentStr[i + 1];
     }
 
-    str[currentStr.length - 1] = currentStr[0]
+    str[str.length] = currentStr[0]
 
     return str.join("");
   }
